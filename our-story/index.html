@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Nest by Six7 | Professional House &amp; Pet Sitting in Colombo</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;family=Caveat:wght@400;700&amp;family=Noto+Sans:wght@400;700&amp;family=Baloo+2:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#ffb781",
+              "secondary-fixed-dim": "#abd0af",
+              "tertiary-fixed": "#ffdcbd",
+              "outline": "#727971",
+              "inverse-primary": "#ffb781",
+              "tertiary-fixed-dim": "#f0bd8b",
+              "surface": "#fefae0",
+              "surface-variant": "#e7e3ca",
+              "secondary": "#45664b",
+              "surface-tint": "#924c00",
+              "on-tertiary-fixed": "#2c1600",
+              "on-secondary-fixed": "#02210c",
+              "on-primary-fixed": "#2f1400",
+              "on-error": "#ffffff",
+              "outline-variant": "#c2c8bf",
+              "secondary-fixed": "#c7ecca",
+              "on-primary": "#ffffff",
+              "surface-container": "#f2efd5",
+              "surface-container-low": "#f8f4db",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f5f1d8",
+              "error-container": "#ffdad6",
+              "secondary-container": "#c4e9c7",
+              "surface-bright": "#fefae0",
+              "primary-fixed": "#ffdcc4",
+              "inverse-surface": "#323120",
+              "surface-container-high": "#ede9cf",
+              "on-primary-fixed-variant": "#6f3800",
+              "on-error-container": "#93000a",
+              "background": "#fefae0",
+              "tertiary": "#56340e",
+              "on-surface-variant": "#424842",
+              "surface-container-highest": "#e7e3ca",
+              "on-secondary-fixed-variant": "#2e4e35",
+              "primary": "#5f2f00",
+              "primary-container": "#814200",
+              "on-surface": "#1d1c0d",
+              "surface-dim": "#dedbc2",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#4a6a4f",
+              "on-tertiary-fixed-variant": "#623f18",
+              "error": "#ba1a1a",
+              "tertiary-container": "#704b23",
+              "primary-fixed-dim": "#ffb781",
+              "on-background": "#1d1c0d",
+              "on-tertiary-container": "#f1bd8b"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"],
+              "accent": ["Caveat"],
+              "display": ["Baloo 2"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      .asymmetric-card-1 { border-radius: 3rem 1.5rem 3rem 1rem; }
+      .asymmetric-card-2 { border-radius: 1.5rem 3rem 1rem 3rem; }
+      .watercolor-gradient { background: linear-gradient(135deg, #BC6C25 0%, #924c00 100%); }
+      .paper-texture { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"); }
+      /* Mobile slider menu - side aligned, opaque */
+      .mobile-menu-open {
+        transform: translateX(0) !important;
+      }
+      .mobile-menu-overlay {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      /* floating whatsapp */
+      .float-wa {
+        position: fixed;
+        bottom: 24px;
+        right: 20px;
+        z-index: 60;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .float-wa:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+      }
+      @media (min-width: 768px) {
+        .float-wa {
+          display: none;
+        }
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-primary overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FEFAE0]/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a href="/" class="text-2xl font-black text-[#3A5A40] italic font-headline">Nest by Six7</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex gap-8 items-center">
+<a href="/story" class="text-[#BC6C25] font-bold border-b-2 border-[#BC6C25] font-headline hover:scale-105 transition-transform">Our Story</a>
+<a href="/services" class="text-[#3A5A40] font-medium font-headline hover:text-[#BC6C25] hover:scale-105 transition-transform">Services</a>
+<a href="/journal" class="text-[#3A5A40] font-medium font-headline hover:text-[#BC6C25] hover:scale-105 transition-transform">The Journal</a>
+<a href="/contact" class="text-[#3A5A40] font-medium font-headline hover:text-[#BC6C25] hover:scale-105 transition-transform">Contact</a>
+</div>
+<div class="flex gap-3 items-center">
+<button class="bg-[#BC6C25] text-surface px-6 py-2 rounded-full font-bold items-center gap-2 hover:scale-105 transition-transform active:scale-95 hidden md:flex">
+<span class="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+</button>
+<!-- Mobile Menu Toggle -->
+<button id="mobileMenuToggle" class="md:hidden text-secondary p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Side Mobile Slider Menu (opaque background + side drawer) -->
+<div id="mobileMenuOverlay" class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm mobile-menu-overlay invisible opacity-0 transition-all md:hidden">
+<div id="mobileDrawer" class="absolute right-0 top-0 h-full w-[80%] max-w-sm bg-surface-container-highest/95 backdrop-blur-xl shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col border-l border-outline-variant/40">
+<div class="flex justify-between items-center p-6 border-b border-outline-variant/50 bg-surface/40">
+<div class="text-2xl font-black text-[#3A5A40] italic font-headline">Nest</div>
+<button id="mobileMenuClose" class="text-secondary p-2 rounded-full hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-8 text-left text-xl">
+<a href="/story" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">history_edu</span> Our Story</a>
+<a href="/services" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">pets</span> Services</a>
+<a href="/journal" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">menu_book</span> The Journal</a>
+<a href="/contact" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">contact_support</span> Contact</a>
+<a href="/areas" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">map</span> Areas We Serve</a>
+<a href="/letters" class="text-on-surface font-headline font-bold py-3 border-b border-outline-variant/30 hover:text-primary transition flex items-center gap-3"><span class="material-symbols-outlined text-2xl">mail</span> Letters</a>
+<button id="mobileWhatsAppBtn" class="bg-primary text-surface mt-6 py-4 rounded-full font-bold flex items-center justify-center gap-3 shadow-lg w-full">
+<span class="material-symbols-outlined">chat</span> WhatsApp Us
+</button>
+</div>
+<div class="mt-auto p-6 text-center text-xs text-on-surface/50 border-t border-outline-variant/30">
+© 2026 Nest by Six7
+</div>
+</div>
+</div>
+
+<!-- Floating WhatsApp Button (Mobile Only) -->
+<a href="https://wa.me/94758244216?text=Hi%20Nest%20team!%20I'd%20like%20to%20book%20your%20house%20%26%20pet%20sitting%20service." target="_blank" rel="noopener noreferrer" class="float-wa flex items-center justify-center bg-[#25D366] rounded-full p-4 shadow-xl transition-all active:scale-95">
+<span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+
+<!-- 1. Hero Scene -->
+<header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" alt="Sun-drenched Colombo verandah" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6xBrFJKyChyPUqQAxnMxrZDlvvUCQTWgt5udg7irNDT9YbjIscpM1OMTEv74hTjZ12poKVCeFVlaJxAqij_ROLOj5ct4mY8HnN1mvQSjVy180DtU3RS-coPx5oVSn6IMbZhqidGD0AMTfHwVohtJALQZmj6JguYswciHAYWAHMoCFnAjJYgGr0C88akDfDNHFxXFNeDB_dRqYiKYMj2pmadILIFJjJHcvlFLYN6mPIHQG4XuchJ0h0XXLl-QMHpRUfwA4edCCiyJp"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-black text-secondary leading-tight font-headline tracking-tight">Professional House &amp; <br/>Pet Sitting in Colombo</h1>
+<p class="font-accent text-3xl md:text-4xl text-tertiary mt-6 mb-10">Who'll care for your nest while you're away?</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="watercolor-gradient text-surface-container-lowest text-lg font-bold px-10 py-5 rounded-full shadow-lg hover:scale-105 transition-transform flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span> Book Your Sitter via WhatsApp
+</button>
+<a href="tel:+94758244216" class="bg-surface text-primary border-2 border-primary text-lg font-bold px-10 py-5 rounded-full shadow-lg hover:bg-primary hover:text-surface transition-all flex items-center gap-3">
+<span class="material-symbols-outlined">call</span> Call Now
+</a>
+<span class="text-secondary/60 font-accent text-xl rotate-[-2deg]">Quick response within 1 hour!</span>
+</div>
+</div>
+<div class="absolute bottom-10 right-10 hidden lg:block opacity-40"><span class="material-symbols-outlined text-9xl text-secondary">eco</span></div>
+</header>
+
+<!-- 2. SEO Intro Block -->
+<section class="py-24 px-6 bg-surface"><div class="max-w-4xl mx-auto bg-surface-container-low paper-texture p-12 md:p-20 shadow-xl asymmetric-card-1 relative"><div class="absolute -top-10 -right-10 w-40 h-40 border-8 border-tertiary/10 rounded-full rotate-12 pointer-events-none"></div><h2 class="text-4xl font-black text-secondary font-headline mb-8">Why Colombo Pets Stay Home with Nest</h2><div class="space-y-6 text-lg text-on-surface/80 leading-relaxed font-body"><p>At Nest by Six7, we understand that your home is more than just a building—it's a sanctuary. In the heart of busy Colombo, your pets find comfort in their familiar scents and your garden thrives under consistent care. Traditional boarding can be stressful for animals and leaves your home vulnerable.</p><p>Our story began with a simple need: reliable, empathetic care for Colombo's finest homes. Whether you're a professional in Colombo 07 or a frequent traveler from Dehiwala, we provide professional house-sitting and pet-sitting services that prioritize the psychological well-being of your furry friends and the security of your estate.</p><p>From watering your precious orchids in the tropical heat to ensuring your senior dog receives their medication on time, our verified sitters are trained to handle the nuances of luxury home maintenance and diverse pet needs. Experience peace of mind with the city's most trusted home-care partner.</p></div><p class="font-accent text-3xl text-primary mt-12 text-right">- With love, The Nest Team</p></div></section>
+
+<!-- 3. The Problem -->
+<section class="grid md:grid-cols-2 min-h-screen items-stretch"><div class="bg-secondary p-12 flex items-center justify-center"><div class="grid grid-cols-2 gap-8 max-w-md"><div class="bg-surface-container-highest/20 p-8 rounded-xl aspect-square flex flex-col items-center justify-center text-surface-container-low"><span class="material-symbols-outlined text-6xl mb-4">potted_plant</span><p class="font-headline font-bold text-center">Wilting Plants</p></div><div class="bg-surface-container-highest/20 p-8 rounded-xl aspect-square flex flex-col items-center justify-center text-surface-container-low mt-8"><span class="material-symbols-outlined text-6xl mb-4">pet_supplies</span><p class="font-headline font-bold text-center">Empty Bowls</p></div><div class="bg-surface-container-highest/20 p-8 rounded-xl aspect-square flex flex-col items-center justify-center text-surface-container-low"><span class="material-symbols-outlined text-6xl mb-4">home_pin</span><p class="font-headline font-bold text-center">Empty Security</p></div><div class="bg-surface-container-highest/20 p-8 rounded-xl aspect-square flex flex-col items-center justify-center text-surface-container-low mt-8"><span class="material-symbols-outlined text-6xl mb-4">sentiment_dissatisfied</span><p class="font-headline font-bold text-center">Lonely Pets</p></div></div></div><div class="bg-surface-container-low p-12 md:p-24 flex flex-col justify-center"><h2 class="text-4xl font-black text-secondary font-headline mb-6">Traveling shouldn't feel like leaving your heart behind.</h2><p class="text-xl text-on-surface/80 leading-relaxed font-body">We've all been there—sitting on a beach or in a boardroom, wondering if the garden is getting enough water or if the cat is lonely. Boarding kennels are often loud, unfamiliar, and stressful.</p><p class="text-xl text-on-surface/80 mt-6 leading-relaxed font-body italic">"Will they remember to lock the back gate? Did I tell them about the leaky tap?"</p><div class="mt-10 border-l-4 border-primary pl-6 py-2"><p class="text-primary font-bold text-2xl font-headline">We're here to solve that.</p></div></div></section>
+
+<!-- 4. Service Detail Block -->
+<section class="py-24 px-6 bg-surface-container-low"><div class="max-w-7xl mx-auto"><div class="flex flex-col md:flex-row gap-12 items-start"><div class="w-full md:w-1/3 bg-[#FFF9C4] p-8 shadow-lg rotate-[-2deg] sticky top-32"><h2 class="text-3xl font-black text-tertiary font-headline mb-6">Complete Care While You're Away</h2><ul class="space-y-4 font-accent text-2xl text-on-surface"><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span> Fresh water &amp; meals</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span> Walks &amp; Playtime</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span> Mail &amp; Package retrieval</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span> Plant hydration</li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span> Light rotation (Security)</li></ul></div><div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8"><div class="bg-surface p-8 asymmetric-card-2 border border-outline-variant/20 hover:shadow-md"><span class="material-symbols-outlined text-4xl text-primary mb-4">pets</span><h3 class="text-2xl font-bold text-secondary mb-3">Pet Companionship</h3><p class="text-on-surface/70">Beyond feeding, we provide quality time. Brushing, playing, and cuddles are mandatory parts of every visit.</p></div><div class="bg-surface p-8 asymmetric-card-1 border border-outline-variant/20 hover:shadow-md"><span class="material-symbols-outlined text-4xl text-primary mb-4">security</span><h3 class="text-2xl font-bold text-secondary mb-3">Home Vigilance</h3><p class="text-on-surface/70">A lived-in home is a safe home. We manage lights, curtains, and keep an eye out for any maintenance issues.</p></div><div class="bg-surface p-8 asymmetric-card-1 border border-outline-variant/20 hover:shadow-md"><span class="material-symbols-outlined text-4xl text-primary mb-4">yard</span><h3 class="text-2xl font-bold text-secondary mb-3">Garden Love</h3><p class="text-on-surface/70">Our sitters understand the Sri Lankan climate. We ensure your frangipani and indoor palms stay lush.</p></div><div class="bg-surface p-8 asymmetric-card-2 border border-outline-variant/20 hover:shadow-md"><span class="material-symbols-outlined text-4xl text-primary mb-4">photo_camera</span><h3 class="text-2xl font-bold text-secondary mb-3">Photo Updates</h3><p class="text-on-surface/70">Real-time WhatsApp updates with photos and videos so you never miss a milestone.</p></div></div></div></div></section>
+
+<!-- 5. Meet Your Sitter -->
+<section class="py-24 px-6 bg-surface-container"><div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16"><div class="relative w-full md:w-1/2"><img class="w-full h-[500px] object-cover asymmetric-card-1 shadow-2xl" alt="Nimala portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQdpGWp-VzJE9V7-BrsLqdxDItBzH86SR9kReqCPZfkeCqi52wrzJ9T5q7u36Ag98DH9qiis1yDbvSDgqSpNSaVgvqMLHxk3ZVbZ33a43qxB3mSCHLbjbS9a1dD4p1kmStXClj7C8V0728GVwR2Btrzloju4nFiGhJAX9Z5FeUacieVXOcyen4AGGpnRqQw-zAFSI8EycwfHK4vfw2TLK_4eeN2CS19OyFCBNTc4VTXSX9MNyd1Pp7Su0pusMJAfbww5Z9CStivVag"/><div class="absolute -bottom-6 -right-6 bg-tertiary text-surface px-8 py-4 rounded-full font-headline font-bold shadow-xl">Featured: Nimala</div></div><div class="w-full md:w-1/2"><h2 class="text-4xl font-black text-secondary font-headline mb-6">Care from Neighbors You Trust</h2><div class="bg-surface p-8 rounded-2xl relative shadow-sm"><p class="font-accent text-3xl text-primary mb-4">"I treat every home like a temple and every pet like family."</p><p class="text-lg text-on-surface/80 leading-relaxed mb-8">Nimala lives in Colombo 07 and has been with Nest for 3 years. A retired educator and lifelong dog lover, she specializes in caring for nervous pets and maintaining heritage Colombo properties.</p></div></div></div></section>
+
+<!-- 6. How It Works -->
+<section class="py-24 px-6 bg-surface overflow-hidden"><h2 class="text-center text-4xl font-black text-secondary font-headline mb-20">The Journey to Peace of Mind</h2><div class="max-w-7xl mx-auto relative"><div class="absolute top-1/2 left-0 w-full h-1 border-t-2 border-dashed border-primary/30 hidden md:block"></div><div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10"><div class="flex flex-col items-center text-center"><div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 shadow-md"><span class="material-symbols-outlined text-4xl text-primary">meeting_room</span></div><h3 class="font-headline font-bold text-secondary text-xl mb-2">Book Home</h3><p class="text-sm text-on-surface/70 px-4">Contact us via WhatsApp to share your dates.</p></div><div class="flex flex-col items-center text-center md:mt-12"><div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 shadow-md"><span class="material-symbols-outlined text-4xl text-primary">commute</span></div><h3 class="font-headline font-bold text-secondary text-xl mb-2">Sitter Arrives</h3><p class="text-sm text-on-surface/70 px-4">Our verified sitter meets you for a key handover.</p></div><div class="flex flex-col items-center text-center"><div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 shadow-md"><span class="material-symbols-outlined text-4xl text-primary">sprint</span></div><h3 class="font-headline font-bold text-secondary text-xl mb-2">Play Time</h3><p class="text-sm text-on-surface/70 px-4">Daily routines maintained with extra love.</p></div><div class="flex flex-col items-center text-center md:mt-12"><div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 shadow-md"><span class="material-symbols-outlined text-4xl text-primary">add_a_photo</span></div><h3 class="font-headline font-bold text-secondary text-xl mb-2">Photo Updates</h3><p class="text-sm text-on-surface/70 px-4">You receive daily visual proof of happiness.</p></div><div class="flex flex-col items-center text-center"><div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 shadow-md"><span class="material-symbols-outlined text-4xl text-primary">sentiment_very_satisfied</span></div><h3 class="font-headline font-bold text-secondary text-xl mb-2">Relax</h3><p class="text-sm text-on-surface/70 px-4">Enjoy your trip knowing everything is okay.</p></div></div></div></section>
+
+<!-- 7. Local SEO + google map overlay (non-interactive) -->
+<section class="py-24 bg-secondary text-surface overflow-hidden"><div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-16 items-center"><div class="w-full md:w-1/2 relative"><div class="asymmetric-card-2 overflow-hidden shadow-2xl relative h-[400px] rounded-2xl"><iframe class="w-full h-full grayscale-[30%] brightness-90" style="filter: contrast(0.9) saturate(1.1); pointer-events: none;" frameborder="0" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Colombo,Sri+Lanka&zoom=12"></iframe><div class="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[2px]"><div class="bg-surface/90 text-secondary p-6 rounded-full border-4 border-primary shadow-2xl flex flex-col items-center gap-2"><span class="material-symbols-outlined text-5xl text-primary">location_on</span><span class="font-headline font-bold text-sm">Colombo</span></div></div></div></div><div class="w-full md:w-1/2"><h2 class="text-4xl font-black font-headline mb-8">Serving Your Neighborhood</h2><div class="bg-surface-container-low/10 p-10 rounded-3xl border border-surface/10"><p class="text-xl mb-8 leading-relaxed italic font-accent text-primary-fixed">"Dear Resident, we've probably walked past your gate already. We know the rhythm of Colombo's streets."</p><div class="grid grid-cols-2 gap-4"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Colombo 03</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Colombo 04</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Colombo 05</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Colombo 07</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Colombo 08</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Dehiwala</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Rajagiriya</div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-tertiary-fixed">stat_0</span> Mount Lavinia</div></div><div class="mt-6 text-center"><a href="/areas" class="inline-block mt-4 text-surface border-b border-surface/40 hover:border-surface transition">View full service map →</a></div></div></div></div></section>
+
+<!-- 8. Pricing with plan href -->
+<section class="py-24 px-6 bg-surface-container-low"><h2 class="text-center text-4xl font-black text-secondary font-headline mb-16">Simple, Honest Care Plans</h2><div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div class="bg-surface p-10 asymmetric-card-1 shadow-md hover:shadow-xl transition-all rotate-[-1deg]"><h3 class="text-2xl font-black text-primary font-headline mb-2">Drop-In Visit</h3><p class="text-on-surface/60 mb-8">Perfect for independent cats or quick plant care.</p><div class="text-4xl font-black text-secondary mb-8">LKR 3,500 <span class="text-sm font-normal">/ visit</span></div><ul class="space-y-4 mb-10"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> 60-minute visit</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Feeding &amp; Water</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Mail Collection</li></ul><a href="/book?plan=dropin" class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-surface transition-colors text-center">Select Plan</a></div><div class="bg-surface-container-highest p-10 asymmetric-card-2 shadow-xl hover:scale-105 transition-all rotate-[1deg] border-2 border-primary relative"><div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-surface px-6 py-1 rounded-full text-sm font-bold">Most Popular</div><h3 class="text-2xl font-black text-primary font-headline mb-2">Full Nest Care</h3><p class="text-on-surface/60 mb-8">Active dog walking and full house management.</p><div class="text-4xl font-black text-secondary mb-8">LKR 7,500 <span class="text-sm font-normal">/ day</span></div><ul class="space-y-4 mb-10"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> 2 Visits Per Day</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Dog Walking (30m)</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Garden Watering</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Daily Photos</li></ul><a href="/book?plan=fullnest" class="block w-full py-4 watercolor-gradient text-surface font-bold rounded-full shadow-lg text-center">Select Plan</a></div><div class="bg-surface p-10 asymmetric-card-1 shadow-md hover:shadow-xl transition-all rotate-[-1deg]"><h3 class="text-2xl font-black text-primary font-headline mb-2">Overnight Stay</h3><p class="text-on-surface/60 mb-8">Maximum security and round-the-clock cuddles.</p><div class="text-4xl font-black text-secondary mb-8">LKR 12,000 <span class="text-sm font-normal">/ night</span></div><ul class="space-y-4 mb-10"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Sitter stays 24/7</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Total Security</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> Senior Pet Support</li></ul><a href="/book?plan=overnight" class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-surface transition-colors text-center">Select Plan</a></div></div></section>
+
+<!-- 9. Trust & Safety -->
+<section class="py-24 px-6 flex justify-center bg-surface"><div class="max-w-4xl w-full bg-[#f4e4bc] paper-texture p-12 md:p-20 shadow-2xl relative border-4 border-[#d4a373]/30 rounded-[1rem] overflow-hidden"><div class="absolute top-10 right-10 rotate-12 opacity-20 pointer-events-none"><span class="material-symbols-outlined text-[10rem] text-primary">verified_user</span></div><h2 class="text-3xl font-black text-secondary font-headline mb-8 border-b-2 border-primary/20 pb-4">Safe, Verified &amp; Trusted Sitters</h2><div class="flex flex-col md:flex-row gap-12 items-center"><div class="w-full md:w-2/3 space-y-6"><p class="font-body text-lg leading-relaxed">Every 'Nest' sitter undergoes a rigorous 4-step verification process before entering your home. This includes background checks, character references from within the Colombo community, and hands-on pet care training.</p><p class="font-body text-lg leading-relaxed">We are a registered Colombo business, fully insured against damages, and committed to transparency.</p><div class="flex gap-4"><div class="text-center p-4 bg-surface/50 rounded-lg"><span class="block text-2xl font-black text-primary">100%</span><span class="text-xs uppercase font-bold text-secondary">Verified</span></div><div class="text-center p-4 bg-surface/50 rounded-lg"><span class="block text-2xl font-black text-primary">500+</span><span class="text-xs uppercase font-bold text-secondary">Housits</span></div></div></div><div class="w-full md:w-1/3 flex justify-center"><div class="w-48 h-48 border-4 border-dashed border-primary/30 rounded-full flex items-center justify-center p-2"><div class="w-full h-full bg-primary rounded-full flex items-center justify-center text-surface text-center px-4 leading-tight font-headline font-bold">Community Verified since 2021</div></div></div></div></div></section>
+
+<!-- 10. Real Stories + Read more button -->
+<section class="py-24 px-6 bg-surface-container-low overflow-hidden"><h2 class="text-center text-4xl font-black text-secondary font-headline mb-16">Letters from the Nest</h2><div class="flex flex-wrap justify-center gap-12 max-w-7xl mx-auto"><div class="w-full md:w-80 bg-surface p-6 shadow-xl rotate-[2deg] asymmetric-card-1 relative border-b-8 border-tertiary-fixed"><img class="w-full h-48 object-cover rounded mb-4" alt="cat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAn_dgMMKZO5FW3dJrkLaho6IvOvlLB9lDtbK3Pctmntv5A2-HDld_aODeshCU35brhhxQuvfQt82fWs83CMxEsFimydXDmBIJMxh4Xkq6k5md49S8sdlNqcnoILQYo06sQV2AXDqEBdNYBRobODmWfgGt9T1EJVp2QkFGB5LOIsS1RX2lXFogbK_ZwE43IduTUZOfw3qRLGRD9yYkzyGLVR-qI4IV8niHEdwvpqgSFxnuV-8fIZdlSX25b7CbQt2m7TMQibaG57dy"/><p class="font-accent text-2xl text-on-surface leading-tight">"Luna was so calm when we got back. Best care in Colombo 03!"</p><p class="mt-4 text-xs font-bold text-secondary text-right">- Anjali &amp; Mohan</p></div><div class="w-full md:w-80 bg-surface p-6 shadow-xl rotate-[-3deg] asymmetric-card-2 relative border-b-8 border-primary-fixed"><img class="w-full h-48 object-cover rounded mb-4" alt="golden retriever" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCGKF0k_GZp36xKXgfcCE-_GUMqXY0syzcOQAKBogI0khmbUlqnCWfCywfHV_RdO6XD6QlcsDBOx-kvC0Ci2ly9YqB-rW8vB3ApdcMFnkRil759mkumw0Rj234ByL7UCKqI-7MjME1RpqmlbHajQD6dVE3TAJRZh2TkoMMQaUrUZZQE47IDHA5-qLyxClBO7Cdb1vfsgVt52YbWhKaG3qHuuL7sgGEtfXAURXyGG7d0A07m4kNt-im53AQipL0FspUn77HBW8HSyjF"/><p class="font-accent text-2xl text-on-surface leading-tight">"Our garden and Buster look amazing. Thank you for the peace of mind."</p><p class="mt-4 text-xs font-bold text-secondary text-right">- The Perera Family</p></div><div class="w-full md:w-80 bg-surface p-6 shadow-xl rotate-[1deg] asymmetric-card-1 relative border-b-8 border-secondary-fixed"><img class="w-full h-48 object-cover rounded mb-4" alt="dog ear scratch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7trabTkAbHZm4HcsAQzllqitImyexuFJC0m1R92PLTwChzFc8T0p_To7n0KqlYW1xIhUXcZSMmH0Q-uZ4CpiTtogMSijq_VDGR6J3Px0qUx1TNFvNvTMD_zO8rp6vUzGW3c935mPFQoCpGT3GnlgWlPMjVreNRnMzwUVDoOJ9Lx6F_FXSPa_2BqlfqKlMLWlIsSXrRJ0b2BeLzt3frKOKPpyAiEGsAIYghPZZUiUlzNj9Vp5KGJ3_NSl9X-D93LBeWOb9_SoKBLMH"/><p class="font-accent text-2xl text-on-surface leading-tight">"Finally a service that understands senior dogs. Highly recommend."</p><p class="mt-4 text-xs font-bold text-secondary text-right">- David R.</p></div></div><div class="text-center mt-16"><a href="/letters" class="inline-flex items-center gap-3 bg-primary text-surface px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg">Read more stories <span class="material-symbols-outlined">arrow_forward</span></a></div></section>
+
+<!-- 11. Tips for Pet Owners (clickable cards) -->
+<section class="py-24 px-6 bg-surface"><div class="max-w-7xl mx-auto"><h2 class="text-4xl font-black text-secondary font-headline mb-12">Tips for Pet Owners in Sri Lanka</h2><div class="grid grid-cols-1 md:grid-cols-4 gap-4"><a href="/tips/keeping-pets-cool" class="bg-surface-container p-4 shadow-md rotate-[2deg] hover:rotate-0 transition-transform block"><img class="w-full aspect-square object-cover mb-3" alt="cool pet tip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPtG6Wiaq6WLkyZmLp13SoQ0g25VdCkP3Wowz9EYJMH0ZpmQTFlm85Lmznqv3cmYwEQrhSEfTUgdQXoqbfLrCNvbU02ZdjGCCp2qzjp0mauJLizZmsmjsOnYaMIDL4oMm0R-DSwwc7LJ17pcb8OZe2ZFI2US2QNDSS3KIgCdZcSGM5Z65d54MOERGEnEix1e_69kJf2_jotaJO6DsXSmAyXIuI22ahZbLrzG2oVBUc2eQGb5RmRRwwLY9aYm2v-67QB0LwGoMI1IJr"/><h4 class="font-bold text-sm leading-tight">Keeping Pets Cool in the Heat</h4></a><a href="/tips/pet-safe-plants" class="bg-surface-container p-4 shadow-md rotate-[-1deg] hover:rotate-0 transition-transform block"><img class="w-full aspect-square object-cover mb-3" alt="pet safe plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5uDov0Be7pGgbPE6QtsF-W--NPbGsW5zGML53vp7nQmRsw6arSGv0_4sm-0mmUBS46b8dwDiThGMdCrYAuzNohACovwvjZxLOKUFO7I0vl9UW9M71hbw0iDbewqx7wYe-QavBNf1aD_pe88DDbNn8FAYqrp7iaoL2u_hBjnZEqzx0duiQmUBihTaNHVY7lSw_ygJGgkSX_hu-76CwIDdiV2tDCeQBMl7BcXSB7AA0H66LrmjDbb9DRLR-H9ZuWjgbesiRFWibXAHv"/><h4 class="font-bold text-sm leading-tight">Top 5 Pet-Safe Tropical Plants</h4></a><a href="/tips/securing-home-long-trips" class="bg-surface-container p-4 shadow-md rotate-[3deg] hover:rotate-0 transition-transform block"><img class="w-full aspect-square object-cover mb-3" alt="home security" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADogLNnvACJbO011s0wkilLmJY12fURt72W05dt7crrb95Gg9IapeQHCHoGTNEPPmM59wObNnkYEReizCZPgXueY0oEK5OoFngZFLJfcYdN5Zos6GkDnue08zeHgQ-Zx8HVguTI7Qc-48jm_1OtpilWt1ejP6lzV2byN-HwPo-L-r4EhF_svTlVjx_UxLKbEuoFsc-XMSiK0gcKJbZI9ZZORXGDJBbKC5UWAdxCaHRPg8_qsLT0LlvaUs3zn4FmXchviRq7jNRKImn"/><h4 class="font-bold text-sm leading-tight">Securing Your Home for Long Trips</h4></a><a href="/tips/traveling-sensitive-cat" class="bg-surface-container p-4 shadow-md rotate-[-2deg] hover:rotate-0 transition-transform block"><img class="w-full aspect-square object-cover mb-3" alt="sensitive cat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-90udbS4zHXcSgYT3IbxiNeBP5aIhDNPtN-5CySAek8QH9pgZ-9hzYIVoTG895jFbtzaf5BysKBEeOLH75CH6TPFkRzqrFeXyK3vY61YuXg8n-Qzh1Cw1QAKUVnUl0Kib-HyChQPyJscnFlqAz7ZyM4A_TVeZRVFg177PRYpjLkW_yoW_ical50COGeu1Y-O_nY7Chd0bfNEwAjqPkJfjwO5i7I6FibYv3SjwYWZ70dYjv9mlpcz0AH0MoftMjPLQNHxQW2JXOlui"/><h4 class="font-bold text-sm leading-tight">Traveling with a Sensitive Cat?</h4></a></div></div></section>
+
+<!-- 12. FAQ -->
+<section class="py-24 px-6 bg-surface-container-low"><div class="max-w-3xl mx-auto"><h2 class="text-4xl font-black text-secondary font-headline mb-12 text-center">Curious Minds Want to Know</h2><div class="space-y-10"><div><h3 class="font-accent text-3xl text-primary mb-2">How do I know my keys are safe?</h3><p class="text-on-surface/80">Keys are kept in an off-site coded safe when not in use and are never labeled with your address for security reasons.</p></div><div><h3 class="font-accent text-3xl text-primary mb-2">Do you handle medical emergencies?</h3><p class="text-on-surface/80">Yes. We require your vet's contact details and an emergency authorization before service begins. We have transport partners on standby.</p></div><div><h3 class="font-accent text-3xl text-primary mb-2">Can I meet the sitter beforehand?</h3><p class="text-on-surface/80">Absolutely! We insist on a "meet and greet" to ensure your pet is comfortable and we understand all your home's quirks.</p></div></div></div></section>
+
+<!-- 13. Final CTA -->
+<section class="py-32 px-6 relative overflow-hidden text-center"><div class="absolute inset-0 watercolor-gradient opacity-10"></div><div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div><div class="relative z-10 max-w-4xl mx-auto"><span class="material-symbols-outlined text-7xl text-primary mb-6">door_open</span><h2 class="text-5xl md:text-6xl font-black text-secondary font-headline mb-8 tracking-tight">Your Nest is Special. <br/>Let's Care for It Together.</h2><p class="text-2xl text-on-surface/70 mb-12 max-w-2xl mx-auto">Ready to enjoy your travels without the worry? Book a consultation today.</p><button class="watercolor-gradient text-surface-container-lowest text-2xl font-black px-12 py-6 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center gap-4 mx-auto"><span class="material-symbols-outlined text-3xl">chat</span> Start Your Journey on WhatsApp</button><div class="mt-16 flex justify-center gap-8 opacity-60"><span class="material-symbols-outlined text-4xl">eco</span><span class="material-symbols-outlined text-4xl">pets</span><span class="material-symbols-outlined text-4xl">home</span></div></div></section>
+
+<!-- Footer -->
+<footer class="bg-[#F8F4DB] w-full rounded-t-[3rem] mt-20"><div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto gap-8"><div class="flex flex-col gap-4 text-center md:text-left"><div class="font-['Caveat'] text-4xl text-[#BC6C25]">Nest by Six7</div><p class="text-[#3A5A40] text-sm max-w-xs">Bespoke home and pet care for Colombo's most cherished residences.</p></div><div class="flex gap-8 text-[#3A5A40]/70 text-sm flex-wrap justify-center"><a href="/privacy" class="hover:text-[#BC6C25]">Privacy</a><a href="/terms" class="hover:text-[#BC6C25]">Terms</a><a href="/house-rules" class="hover:text-[#BC6C25]">House Rules</a><a href="/pet-care-guide" class="hover:text-[#BC6C25]">Pet Care Guide</a></div><div class="text-[#3A5A40] text-sm">© 2026 Nest by Six7. Made with soul in Colombo.</div></div></footer>
+
+<script>
+    // Mobile menu (right side slider + opaque overlay)
+    const toggleBtn = document.getElementById('mobileMenuToggle');
+    const closeBtn = document.getElementById('mobileMenuClose');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const drawer = document.getElementById('mobileDrawer');
+    const mobileWhatsappBtn = document.getElementById('mobileWhatsAppBtn');
+
+    function openMenu() {
+      if (overlay) {
+        overlay.classList.remove('invisible', 'opacity-0');
+        overlay.classList.add('visible', 'opacity-100');
+        if (drawer) drawer.classList.remove('translate-x-full');
+      }
+    }
+    function closeMenu() {
+      if (overlay) {
+        overlay.classList.add('invisible', 'opacity-0');
+        overlay.classList.remove('visible', 'opacity-100');
+        if (drawer) drawer.classList.add('translate-x-full');
+      }
+    }
+    if (toggleBtn) toggleBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', (e) => { if(e.target === overlay) closeMenu(); });
+    if (mobileWhatsappBtn) mobileWhatsappBtn.addEventListener('click', () => window.open('https://wa.me/94758244216?text=Hi%20Nest%20team!%20I\'d%20like%20to%20book%20your%20service.', '_blank'));
+
+    // Simple routing demo for internal / links
+    document.querySelectorAll('a[href^="/"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('/') && !href.startsWith('//')) {
+          e.preventDefault();
+          alert(`✨ Demo: navigation to "${href}" would happen here.\n(Routing active in production)`);
+        }
+      });
+    });
+    // WhatsApp CTA buttons simulation
+    const waButtons = document.querySelectorAll('.watercolor-gradient, .bg-primary.text-surface, .bg-secondary.text-surface, .float-wa');
+    waButtons.forEach(btn => {
+      if (btn.classList && (btn.innerText.includes('WhatsApp') || btn.classList.contains('float-wa') || btn.id === 'mobileWhatsAppBtn')) {
+        if (btn.tagName !== 'A') {
+          btn.addEventListener('click', () => window.open('https://wa.me/94758244216?text=Hi%20Nest%20team!%20I\'m%20interested%20in%20your%20pet%20sitting%20service.', '_blank'));
+        }
+      }
+    });
+    const callNow = document.querySelector('a[href="tel:+94758244216"]');
+    if (callNow) callNow.addEventListener('click', (e) => { /* native tel works */ });
+  </script>
+</body>
+</html>
